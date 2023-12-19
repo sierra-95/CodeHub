@@ -1,2 +1,2 @@
 # memory-bank
-Code-snippets
+Code
