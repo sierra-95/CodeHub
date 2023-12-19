@@ -1,0 +1,9 @@
+<!--Always specify the width and height of the image. It will avoid layout jank during image loading-->
+<picture>
+    <source srcset="/img/logo.webp" type="image/webp">
+    <source srcset="/img/logo.jp2" type="image/jp2">
+    <img src="/img/logo.jpg">
+</picture>
+
+<!--It can also be use to offer different versions for different devices/display-->
+<!-- combine different sources which provide different versions of an image-->
