@@ -1,0 +1,35 @@
+-------------**********------------
+ssh-keygen -t rsa -b 4096
+
+--------------*********------------
+This command will generate a new RSA key pair with a bit length of 4096.
+You can press Enter to accept the default file location (~/.ssh/id_rsa), or provide a custom location if you prefer.
+You'll be prompted to enter a passphrase for your key. This passphrase adds an extra layer of security.
+Make sure to choose a strong passphrase and remember it. You'll need it whenever you use the private key.
+Once the key pair is generated, you'll see output indicating where the keys are saved
+(usually in the ~/.ssh/ directory).
+-----------**************---------------
+--------->My-server IP address<-------------
+Name	        Username	IP	             State	
+117256-web-01	ubuntu	    54.237.104.191	running   
+
+ssh-copy-id username@54.237.104.191
+
+------------***********--------------
+If you encounter issues with ssh-copy-id, you can manually copy the public key:
+############################
+cat ~/.ssh/id_rsa.pub | ssh username@54.237.104.191 "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
+--------------**********-------------
+
+ssh ubuntu@54.237.104.191    --->connect with public key
+
+ssh -i ~/.ssh/id_rsa ubuntu@54.237.104.191   ----->connect with public key
+
+
+chmod 600 /path/to/your/private_or_public_key   default->id_rsa.pub     
+
+----------********-------
+By setting the permissions to 600, you're ensuring that your private key file is protected and can only be
+accessed by you,which is important for maintaining the security of your SSH connections.
+
+

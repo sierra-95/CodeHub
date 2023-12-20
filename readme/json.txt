@@ -1,0 +1,18 @@
+mode="w" will create the file if it doesnt exist
+it will also always overwrite
+--------->with open(filename,mode="w", encoding="utf-8") as file:
+
+mode="a" will create the file if not exist
+it will then append content
+-------->with open(filename,mode="a",encoding="utf-8") as file:
+
+json.dumps is for python obj -> json strings
+------------>json.dumps(dictionary)
+json.dump is for writing python obj to files in string format
+----------->json.dump(dictionary, json_file)
+
+json.loads is for json strings -> python objects
+-------->json.loads(my_str)
+json.load loads strings from a file
+------>loaded_data = json.load(json_file)
+

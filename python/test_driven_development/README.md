@@ -1,0 +1,2 @@
+Shakespear:
+Trust but verify

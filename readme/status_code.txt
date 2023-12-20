@@ -1,0 +1,37 @@
+1xx Informational:
+--------------------
+
+100 Continue: The server received the initial part of the request, and the client can proceed with the rest.
+101 Switching Protocols: The server is changing the protocol being used, such as from HTTP to WebSocket.
+
+2xx Success:
+------------
+200 OK: The request was successful, and the server responded with the requested data.
+201 Created: The request has been fulfilled, and a new resource has been created.
+202 Accepted: The request has been accepted for processing, but the processing is not yet complete.
+204 No Content: The request was successful, but there is no response body to return.
+206 Partial Content: The server is delivering only a part of the requested resource,
+often in response to a partial GET request
+
+3xx Redirection:
+----------------
+301 Moved Permanently: The requested resource has been permanently moved to a new URL.
+302 Found (or Temporary Redirect): The requested resource is temporarily located at a different URL.
+307 Temporary Redirect: Similar to 302, but the client must use the same method for the redirected request.
+
+4xx Client Errors:
+------------------
+400 Bad Request: The server cannot understand the client's request, often due to a malformed request.
+401 Unauthorized: Authentication is required to access the resource.
+403 Forbidden: The server understands the request but refuses to fulfill it for authorization reasons.
+404 Not Found: The requested resource could not be found on the server.
+405 Method Not Allowed: The request method (GET, POST, etc.) used is not allowed for the requested resource.
+429 Too Many Requests: The user has sent too many requests in a given amount of time,
+often used for rate limiting.
+
+5xx Server Errors:
+------------------
+500 Internal Server Error: A generic error message indicating that something went wrong on the server.
+502 Bad Gateway: The server, while acting as a gateway, received an invalid response from an upstream server.
+503 Service Unavailable: The server is currently unable to handle the request, often due to being overloaded or down.
+504 Gateway Timeout: The server, acting as a gateway, did not receive a timely response from the upstream server.

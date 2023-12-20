@@ -1,0 +1,36 @@
+Obtain the Promo Code: ->Holb20233m8xq2<-
+Go to your "Tools" space or wherever the provided promo code is accessible.
+
+Register the Domain:
+------------------------
+Visit the .TECH Domains website.
+Search for the domain name you want (without www or any subdomain) using the promo code.
+Follow the registration process and provide your contact information.
+Apply the promo code during the checkout process to get the domain for free.
+------------******************----------------
+DNS: ------------Holb20233m8xq2.tech----------------
+
+Configure DNS Records:
+-------------------------
+Log in to your domain registrar's control panel (where you registered the domain).
+Find the DNS management or DNS settings section.
+Locate the option to manage your DNS records.
+
+Add A Record:
+------------------
+Add a new A (Address) record.
+Enter "@" (without quotes) as the hostname or leave it blank. This indicates the root domain.
+Enter your web server's IP address in the IP address field.
+
+-------------------serverIP:54.237.104.191---------------------
+Save or apply the changes.
+
+Wait for Propagation:
+-------------------------
+DNS changes can take time to propagate across the internet. It usually takes 1-2 hours, but in some cases, it might take longer.
+During this time, your domain will start pointing to your web server's IP address.
+
+Update Profile with Domain:
+--------------------------------
+Once the DNS propagation is complete and your domain is pointing to your server's IP address, go to your profile.
+Find the "Project website URL" field and enter your newly registered domain name (e.g., foobar.tech).

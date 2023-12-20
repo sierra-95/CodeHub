@@ -1,0 +1,37 @@
+scp Syntax:
+------------***********----------
+scp [options] [source] [destination]
+--------------**********-------------
+Basic Usage:
+
+1. Copying a File from Local to Remote:
+------------------------------------
+
+scp /path/to/local/file username@remote_server:/path/to/destination/
+Example:
+scp myfile.txt user@example.com:/home/user/documents/
+
+2.Copying a File from Remote to Local:
+-----------------------------------------
+
+scp username@remote_server:/path/to/remote/file /path/to/destination/
+Example:
+scp user@example.com:/var/log/syslog /home/user/backups/
+
+3.Copying a Directory:
+-----------------------
+To copy an entire directory and its contents, you can use the -r (recursive) option:
+scp -r /path/to/local/directory username@remote_server:/path/to/destination/
+Example:
+scp -r myfolder user@example.com:/home/user/
+
+4.SCP Options:
+------------------
+-P port: Specifies the SSH port to use (default is 22).
+-i identity_file: Specifies the path to an SSH private key for authentication.
+-v: Verbose mode for more detailed output.
+-q: Quiet mode, suppresses non-error messages.
+-C: Compresses data during transfer, useful for slower connections.
+-p: Preserves the file's timestamps and permissions during transfer.
+
+

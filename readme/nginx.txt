@@ -1,0 +1,28 @@
+sudo mkdir -p /var/www/Holb20233m8xq2.tech/html
+sudo chown -R $USER:$USER /var/www/Holb20233m8xq2.tech/html
+------------------------------------------------------------------
+#$USER:$USER: Sets both the user and group ownership to the current user.
+#chown [OPTIONS] USER:[GROUP] FILE(s)
+---------------------------------------------------------------------
+sudo chmod -R 755 /var/www
+vi /var/www/Holb20233m8xq2.tech/html/index.html 
+sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/Holb20233m8xq2.tech
+sudo vi /etc/nginx/sites-available/Holb20233m8xq2.tech
+sudo ln -s /etc/nginx/sites-available/Holb20233m8xq2.tech /etc/nginx/sites-enabled/
+sudo vi /etc/nginx/nginx.conf
+**************************************
+server {
+        listen 80;
+        listen [::]:80;
+
+        root /var/www/Holb20233m8xq2.tech/html;
+        index index.html index.htm index.nginx-debian.html;
+
+        server_name Holb20233m8xq2.tech www.Holb20233m8xq2.tech;
+}
+************************************************
+sudo nginx -t                                                                                 
+>>>nginx: the configuration file /etc/nginx/nginx.conf syntax is ok 
+>>>nginx: configuration file /etc/nginx/nginx.conf test is successful 
+           
+sudo systemctl reload nginx            
