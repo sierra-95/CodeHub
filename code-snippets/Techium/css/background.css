@@ -1,0 +1,25 @@
+body {
+    background-color: #f2f2f2; /* Set the background color of the entire page */
+  } 
+.background-image {
+    background-image: url('your-image-url.jpg'); 
+    background-size: cover; /* Ensure the image covers the entire element */
+    height: 300px; /* Set the height of the element */
+}  
+.background-repeat {
+    background-image: url('your-pattern-image.png'); 
+    background-repeat: repeat; /* Repeat the image both horizontally and vertically */
+    height: 150px; /* Set the height of the element */
+}  
+.background-position {
+    background-image: url('your-image-url.jpg'); 
+    background-position: center; /* Center the background image */
+    background-size: cover; /* Ensure the image covers the entire element */
+    height: 200px; 
+} 
+.background-attachment {
+    background-image: url('your-image-url.jpg'); 
+    background-attachment: fixed; /* Fix the background while scrolling */
+    background-size: cover; /* Ensure the image covers the entire element */
+    height: 300px; 
+}

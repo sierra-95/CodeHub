@@ -1,0 +1,13 @@
+p {
+    line-height: 1; /*space between 2 lines . recommended 1.5 and above*/
+}
+a {
+    text-decoration: line-through; /*line appears cancelled*/
+  }
+p {
+    text-transform: lowercase;
+    text-align: center;
+  }
+a {
+    letter-spacing: -0.4rem;
+  }

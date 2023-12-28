@@ -1,0 +1,26 @@
+<!--css selectors-->
+<html>
+    <head>
+        <style>
+            .parent > p {
+                color: blue; /* Styles direct child paragraphs */
+            }
+            .p + p {
+                font-weight: bold; /* Styles the second paragraph */
+            }
+            .h2 ~ p {
+                color: green; /* Styles all p's that folow h2*/
+            }
+
+        </style>
+    </head>
+    <body>          
+        <div class="parent">
+            <h2>Heading</h2>
+            <p>First paragraph</p>
+            <span>General sibling span</span>
+            <p>Second paragraph</p>
+          </div>
+          
+    </body>
+</html>

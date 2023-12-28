@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Link Styles</title>
+  <style>
+    /* Links with "facebook" anywhere in the URL */
+    a[href*="facebook"] {
+        color: #3C5A99;
+    }
+    /* Internal links, beginning with "#" */
+    a[href^="#"] {
+        background-color: gold;
+    }
+    /* Links that end in ".org" */
+    a[href$=".org"] {
+        color: red;
+    }
+  </style>
+</head>
+<body>
+  <a href="https://www.facebook.com">Facebook Link</a>
+  <a href="#section">Internal Link</a>
+  <a href="https://example.org">.org Link</a>
+</body>
+</html>
