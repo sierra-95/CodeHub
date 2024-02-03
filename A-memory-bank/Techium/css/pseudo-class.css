@@ -1,15 +1,15 @@
 /* a:link or just a */
 a:link {
     color: green;
-  }
+}
   /* when you have already clicked and visited the link / page */
-  a:visited {
+a:visited {
     color: cadetblue;
-  }
+}
   /* any link over which the user's pointer is hovering */
-  a:hover {
+a:hover {
     text-decoration: underline;
-  }
-  a:active {
+}
+a:active {
     color: darkcyan;
-  }
+}
