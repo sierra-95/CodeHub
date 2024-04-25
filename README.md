@@ -1,2 +1,2 @@
 # Peace in coding
-QuietHub
+CodeHub
